@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+
+    <!--My icon-->
+    <link rel="icon" href="img/merchicon.png">
+
+    <!--My css file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+
+    <!--Font awsome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+
+    <div class="navbarmain">
+        <nav class="navbar">
+            <h1>Contact form</h1>
+            <div>
+                <ul class="navbar-links">
+                    <li><a href="begg.html">Home</a></li>
+                    <p><a href="collection.html" target="_blank" rel="noopener noreferrer">Collection</a></p>
+            </div>
+        </nav>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </nav>
+
+        <!--side navbar-->
+
+        <div class="side-navbar">
+            <p style="text-align: right;" onclick="closeNavbar()">
+                <i class="fa-solid fa-xmark"></i>
+            </p>
+
+            <div class="side-navbar-element">
+                <p class="side-navbar-link"><a href="begg.html">Home</a></p>
+                <p class="side-navbar-link"><a href="collection.html" target="_blank" rel="noopener noreferrer">Collection</a></p>
+            </div>
+        </div>
+
+
+        <!-- Contact -->
+
+        <div class="contact">
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="formtab">
+
+                <input type="hidden" name="access_key" value="1673fd21-182c-4171-b93b-27759bf6fd6f">
+                <h2>Contact US</h2>
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder=" Enter your Email id" required>
+                <textarea name="message" class="messagetab" rows="4" placeholder="Feel free to text me" required></textarea>
+                <button type="submit">Submit <i class="fa-solid fa-arrow-right" style="padding-left: 5px;"></i></button>
+
+
+            </form>
+        </div>
+
+
+
+        <!-- footer  -->
+
+        <div class="footer">
+
+            <div class="footer-box">
+                <div class="box1">
+                    <h2>Merch D fleet</h2>
+                    <p class="prom">Wear your fandom proudly, We'll handle the rest.</p>
+
+                    <div class="iconsecton">
+                        <a href="https://www.instagram.com/saravanan_chandru25/" style="color: white;"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/saravanan.chandru.167/" style="color: white;"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://youtube.com/@onepieceofficialeng?si=UVsi1uqaKe3ifksu" style="color: white;"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <p class="lastmer">© MerchDfleet. 2024. All Rights Reserved.</p>
+        </div>
+
+
+
+        <!--Link Javascript File-->
+        <script src="script.js"></script>
+</body>
+
+</html>
